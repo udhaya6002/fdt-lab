@@ -1,0 +1,89 @@
+/* Home Page */
+.home-container {
+  min-height: 100vh;
+  background-color: #f4f6f9;
+}
+
+/* Navigation Bar */
+.navbar {
+  height: 65px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+}
+
+/* Website Title */
+.navbar h2 {
+  margin: 0;
+  font-size: 24px;
+}
+
+/* Logout Button */
+.logout-btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  background-color: white;
+  color: #667eea;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.logout-btn:hover {
+  background-color: #eeeeee;
+}
+
+/* Main Content */
+.home-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 65px);
+}
+
+/* Welcome Card */
+.welcome-box {
+  width: 500px;
+  padding: 40px;
+  background-color: white;
+  text-align: center;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Welcome Heading */
+.welcome-box h1 {
+  color: #333;
+  margin-bottom: 15px;
+}
+
+/* Welcome Text */
+.welcome-box p {
+  color: #666;
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+/* User Name */
+.username {
+  color: #667eea;
+  font-weight: bold;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .navbar {
+    padding: 0 15px;
+  }
+  .navbar h2 {
+    font-size: 19px;
+  }
+  .welcome-box {
+    width: 80%;
+    padding: 25px;
+  }
+}

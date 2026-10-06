@@ -1,0 +1,51 @@
+<table>
+  <caption><b>CALCULATOR</b></caption>
+
+  <tr>
+    <td>First Number :</td>
+    <td>
+      <input type="number" #firstNumber placeholder="First Number">
+    </td>
+  </tr>
+
+  <tr>
+    <td>Second Number :</td>
+    <td>
+      <input type="number" #secondNumber placeholder="Second Number">
+    </td>
+  </tr>
+
+  <tr>
+    <td></td>
+    <td>
+      <button (click)="add(firstNumber.value, secondNumber.value)">Addition</button>
+    </td>
+  </tr>
+
+  <tr>
+    <td></td>
+    <td>
+      <button (click)="subtract(firstNumber.value, secondNumber.value)">Subtract</button>
+    </td>
+  </tr>
+
+  <tr>
+    <td></td>
+    <td>
+      <button (click)="multiply(firstNumber.value, secondNumber.value)">Multiply</button>
+    </td>
+  </tr>
+
+  <tr>
+    <td></td>
+    <td>
+      <button (click)="divide(firstNumber.value, secondNumber.value)">Divide</button>
+    </td>
+  </tr>
+
+  <tr>
+    <td><b>{{ resultName }}</b></td>
+    <td><b>{{ result }}</b></td>
+  </tr>
+
+</table>

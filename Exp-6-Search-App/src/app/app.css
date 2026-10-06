@@ -1,0 +1,4 @@
+/* Root component styles (layout is handled by the home component) */
+:host {
+  display: block;
+}

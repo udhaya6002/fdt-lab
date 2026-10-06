@@ -1,0 +1,11 @@
+<div class="container">
+  <h1>Users List</h1>
+  <input type="text" [(ngModel)]="searchTerm" (input)="search()" placeholder="Search by name or email" class="search-box">
+  <ul class="users-list">
+    <li *ngFor="let user of filteredUsers"> {{ user.name }} - {{ user.email }}
+    </li>
+  </ul>
+  <p *ngIf="filteredUsers.length === 0">
+    No users found
+  </p>
+</div>

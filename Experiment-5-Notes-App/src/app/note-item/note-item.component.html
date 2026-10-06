@@ -1,0 +1,26 @@
+<div class="note-item">
+  @if (!editing) {
+    <h3>{{ note.title }}</h3>
+    <p>{{ note.content }}</p>
+    <button type="button" (click)="editNote()">
+      Update
+    </button>
+    <button type="button" (click)="deleteNote()">
+      Delete
+    </button>
+  } @else {
+    <h3>Update Note</h3>
+    <label>Title:</label>
+    <input type="text" [(ngModel)]="editTitle">
+    <label>Content:</label>
+    <textarea [(ngModel)]="editContent">
+    </textarea>
+    <br><br>
+    <button type="button" (click)="updateNote()">
+      Update Note
+    </button>
+    <button type="button" (click)="cancelEdit()">
+      Cancel
+    </button>
+  }
+</div>

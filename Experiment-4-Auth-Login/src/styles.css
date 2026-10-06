@@ -1,0 +1,15 @@
+/* Global styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Heading rendered by app.component.html above the router outlet */
+app-root > h1 {
+  margin: 0;
+  padding: 15px;
+  text-align: center;
+  background-color: #2d2f45;
+  color: white;
+  font-size: 22px;
+}

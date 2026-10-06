@@ -1,0 +1,18 @@
+table {
+  background-color: #BB8FCE;
+  border: 1px solid #110517;
+  padding: 30px;
+  top: 30%;
+  left: 50%;
+  position: fixed;
+  transform: translate(-50%, -50%);
+}
+
+button {
+  margin: 3px;
+  width: 100px;
+}
+
+.center-content {
+  text-align: center;
+}

@@ -1,0 +1,21 @@
+<div class="note-list">
+  <h2>My Notes</h2>
+  @if (noteService.notes().length === 0) {
+    <p class="empty">
+      No notes available.
+    </p>
+  } @else {
+    @for (
+      note of noteService.notes();
+      track note.id
+    ) {
+
+      <app-note-item
+        [note]="note">
+      </app-note-item>
+
+    }
+
+  }
+
+</div>
